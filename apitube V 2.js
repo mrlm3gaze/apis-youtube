@@ -1,4 +1,4 @@
-	var card   =document.querySelector('#index_tub'),
+var card   =document.querySelector('#index_tub'),
 		select =document.querySelector(".slection"),
 		card2  =document.querySelector("#res_top"),
 		vscroll=document.querySelector('#top'),
@@ -7,7 +7,7 @@
         a, i, txtValue,
 	    input = document.getElementById("myInput"),
 	    filter = input.value.toUpperCase(),
-	    li = ul.getElementsByTagName("li"),
+	    li = card.getElementsByTagName("li"),
 	    slider = document.querySelector('.slider'),
 		off_on = document.querySelector('.on'),
 	    checkbox = document.querySelector('input[type="checkbox"]');
@@ -177,7 +177,6 @@ function getTube(country,info){
 	    });
 }
 function myFunction() {
-	ul = document.getElementById("index_tub");
     for (var i = 0; i < li.length; i++) {
         a = li[i];
         txtValue = a.textContent || a.innerText;
