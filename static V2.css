@@ -1,0 +1,75 @@
+		/*========================== default style ==============================*/
+		html,body,*{margin: 0;padding: 0;border: none;outline: none;user-select: none;box-sizing: border-box;}
+		a{text-decoration: none;color:inherit}
+		body{font-family: 'El Messiri', sans-serif;cursor: default;}
+		i{vertical-align: middle;}
+		/*===========================================root ================================*/
+		:root{
+  			--main-inh-color:inherit;
+  			--main-bgW-color:#e2e2e2;
+  			--main-bgB-color:#1f1f1f;
+		}
+		/*====================================== containers ====================================*/
+		section.content {width: 100%;display: inline-flex;background: #e2e2e2;color:var(--main-bgB-color) }
+		.left_content {width: 48%;margin: 0 1%;}
+		.right_content {width: 48%;margin: 0 1%;box-sizing: border-box;padding: 0 5px;}
+/*==================================== containers left ====================================*/
+		.video {width: 100%;height: 330px;}
+
+		iframe {width: 100%;height: 100%;}
+
+		.infoVedo {width: 100%;margin: 10px 0;}
+
+		h3.title {font-size: 20px;color: var(--main-inh-color);font-weight: bold;width: 100%;padding: 5px;box-sizing: border-box;}
+
+		.NameChannel {width: 100%;padding: 5px;box-sizing: border-box;font-size: 20px;overflow: hidden;}
+
+		a.linkchannel {padding: 5px;border-radius: 5px;vertical-align: middle;line-height: 41px;color: var(--main-inh-color);font-size: inherit;font-weight: bold;}
+
+		a.gotoYtb {float: right;background: var(--main-inh-color);padding: 5px;box-sizing: border-box;border-radius: 5px;color: red;font-weight: bold;}
+
+		span.Subscribe {float: right;margin: 0 10px;background: red;color: var(--main-bgW-color);padding: 5px;border-radius: 5px;cursor: pointer;}
+
+
+		.description {padding: 4px;}
+
+		.descTitle {width: 100%;padding: 5px;color: var(--main-inh-color);font-size: 19px;font-weight: bold;border-bottom: 2px solid;}
+
+		span.desc,span.TagsV {border: 1px solid;border-bottom: none;padding: 3px;border-radius: 5px 5px 0 0;cursor: pointer;margin: 0 5px;}
+
+		span.desc{background: var(--main-bgB-color);color: var(--main-bgW-color)}
+
+		span.TagsV {background: transparent;}
+
+		span.dateV {float: right;padding: 4px;}
+
+		.TagsTxt,.DiscTxt{padding: 5px;color: var(--main-inh-color);font-size: 18px;font-weight: bold;text-align: start;unicode-bidi: plaintext;border: 1px solid;margin: 2px 0;border-radius: 5px;white-space: break-spaces;text-transform: capitalize;letter-spacing: 3px;overflow-wrap: break-word;word-break: break-word;}
+
+		.TagsTxt{display: none;}
+
+		span.Arry {background: var(--main-bgB-color);margin: 0 3px;padding: 02px 5px;line-height: 40px;border-radius: 5px;word-break: break-word;text-align: start;unicode-bidi: plaintext;box-sizing: border-box;color: var(--main-bgW-color);}
+
+/*==================================== containers right ====================================*/
+		.top_comment {width: 100%;background: #8a8484;padding: 9px;box-sizing: border-box;color: #fff;font-size: 20px;font-weight: bold;overflow: hidden;}
+
+		span.Comment_word {float: left;vertical-align: middle;}
+
+		span.Filter_word {float: right;}
+
+		select#OrderComment {vertical-align: middle;float: right;height: 31px;background: inherit;border: 1px solid;cursor: pointer;color: inherit;font-size: inherit;font-family: inherit;font-weight: inherit;margin: 0 5px;}
+
+				/*======================= comment container ========================*/
+		.comment_container {width: 100%;box-sizing: border-box;padding: 8px;margin: 10px 0;border-radius: 5px;color: var(--main-inh-color);box-shadow: 1px 1px 7px;}
+
+		.profile_User {display: inline-flex;vertical-align: middle;box-sizing: border-box;}
+
+		img.profile {width: 50px;height: 50px;border-radius: 50%;vertical-align: middle;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAANlBMV…XiNDNSxcWtSlCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAwCn+AEXGNosxDBhFAAAAAElFTkSuQmCC);background-position: center;background-repeat: no-repeat;background-size: contain;}
+		h4.name {vertical-align: middle;position: relative;left: 6px;align-items: center;line-height: 50px;}
+
+		p.commentTex {text-align: start;unicode-bidi: plaintext;color: inherit;font-size: 20px;font-weight: 500;}
+
+		.likes_time {width: 100%;color: inherit;font-size: 17px;overflow: hidden;}
+
+		p.date {line-height: 33px;float: left;}
+
+		.likes {line-height: 26px;float: right;vertical-align: middle;}
