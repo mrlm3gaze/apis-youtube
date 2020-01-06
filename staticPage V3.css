@@ -1,0 +1,98 @@
+		html,body,*{margin: 0;padding: 0;border: none;outline: none;user-select: none;box-sizing: border-box;}
+		a{text-decoration: none;color:inherit}
+		body{font-family: 'El Messiri', sans-serif;cursor: default;background: black;}
+		i{vertical-align: middle;}
+		.stop-scrolling {height: 100%;overflow: hidden;pointer-events: none;}
+		/*===========================================root ================================*/
+		:root{
+  			--main-inh-color:inherit;
+  			--main-bgW-color:#e2e2e2;
+  			--main-bgB-color:#1f1f1f;
+		}
+		/*====================================== containers ====================================*/
+		section.content {width: 100%;display: inline-flex;background: #e2e2e2;color:var(--main-bgB-color) }
+		.left_content {width: 48%;margin: 0 1%;}
+		.right_content {width: 48%;margin: 0 1%;box-sizing: border-box;padding: 0 5px;}
+/*==================================== containers left ====================================*/
+		.video {width: 100%;height: 330px;}
+
+		iframe {width: 100%;height: 100%;}
+
+		.infoVedo {width: 100%;margin: 10px 0;}
+
+		h3.title {font-size: 20px;color: var(--main-inh-color);font-weight: bold;width: 100%;padding: 5px;box-sizing: border-box;text-align: start;unicode-bidi: plaintext;}
+
+		.NameChannel {width: 100%;padding: 5px;box-sizing: border-box;font-size: 20px;overflow: hidden;}
+
+		a.linkchannel {padding: 5px;border-radius: 5px;vertical-align: middle;line-height: 41px;color: var(--main-inh-color);font-size: inherit;font-weight: bold;}
+
+		a.gotoYtb {float: right;background: var(--main-bgB-color);padding: 5px;box-sizing: border-box;border-radius: 5px;color: red;font-weight: bold;}
+
+		span.Subscribe {float: right;margin: 0 10px;background: red;color: var(--main-bgW-color);padding: 5px;border-radius: 5px;cursor: pointer;}
+
+
+		.description {padding: 4px;}
+
+		.descTitle {width: 100%;padding: 5px;color: var(--main-inh-color);font-size: 19px;font-weight: bold;border-bottom: 2px solid;}
+
+		span.desc,span.TagsV {border: 1px solid;border-bottom: none;padding: 3px;border-radius: 5px 5px 0 0;cursor: pointer;margin: 0 5px;}
+
+		/*span.desc{background: var(--main-bgB-color);color: var(--main-bgW-color)}
+
+		span.TagsV {background: transparent;}*/
+
+		span.dateV {float: right;padding: 4px;}
+
+		.TagsTxt,.DiscTxt{padding: 5px;color: var(--main-inh-color);font-size: 18px;font-weight: bold;text-align: start;unicode-bidi: plaintext;border: 1px solid;margin: 2px 0;border-radius: 5px;white-space: break-spaces;text-transform: capitalize;overflow-wrap: break-word;word-break: break-word;}
+
+		.TagsTxt{display: none;}
+
+		span.Arry {background: var(--main-bgB-color);margin:3px;padding: 02px 5px;border-radius: 5px;word-break: break-word;text-align: start;unicode-bidi: plaintext;box-sizing: border-box;color: var(--main-bgW-color); display: inline-block;}
+
+/*==================================== containers right ====================================*/
+		.top_comment {width: 100%;background: #f1f1f1;padding: 9px;box-sizing: border-box;color: inherit;font-size: 20px;font-weight: bold;overflow: hidden;border-radius: 0 0 5px 5px;}
+
+		span.Comment_word {float: left;vertical-align: middle;}
+
+		span.Filter_word {float: right;}
+
+		select#OrderComment {vertical-align: middle;float: right;height: 31px;background: inherit;border: 1px solid;cursor: pointer;color: inherit;font-size: inherit;font-family: inherit;font-weight: inherit;margin: 0 5px;}
+
+				/*======================= comment container ========================*/
+		.comment_container {width: 100%;box-sizing: border-box;padding: 8px;margin: 10px 0;border-radius: 5px;color: var(--main-inh-color);box-shadow: 1px 1px 7px;}
+
+		.profile_User {display: inline-flex;vertical-align: middle;box-sizing: border-box;}
+
+		img.profile {width: 50px;height: 50px;border-radius: 50%;vertical-align: middle;background-image: url(https://lh3.googleusercontent.com/-cqHslEVUe_c/XhJ1b0b5XLI/AAAAAAAADEo/hTcTlKdq5jgaH-DRm3fwsPUvZGOoV4S3ACEwYBhgL/h120/image-placeholder.png);background-position: center;background-repeat: no-repeat;background-size: contain;}
+		h4.name {vertical-align: middle;position: relative;left: 6px;align-items: center;line-height: 50px;}
+
+		p.commentTex {text-align: start;unicode-bidi: plaintext;color: inherit;font-size: 20px;font-weight: 500;white-space: break-spaces;text-transform: capitalize;overflow-wrap: break-word;word-break: break-word;}
+
+		p.commentTex a{color: #6d67ff;transition:  0.2s}
+
+		p.commentTex a:hover{color: #0a00e8;transition:  0.2s}
+
+		.likes_time {width: 100%;color: inherit;font-size: 17px;overflow: hidden;}
+
+		p.date {line-height: 33px;float: left;}
+
+		.likes {line-height: 26px;float: right;vertical-align: middle;}
+
+		.likesNm {color: red;}
+/*================================= dialog  ================================*/
+		.Dialog {position: fixed;top:0;left:50%;transform: translate(-50%, 0);background: #867f7f;padding: 10px;color: #ffff;text-align: start;unicode-bidi: plaintext;border-radius: 5px;font-size: 29px;font-family: inherit;display: none;z-index: 999;}
+		.TextDialog {text-align: start;unicode-bidi: inherit;}
+		.Button {border: 1px solid #777;padding: 5px;font-size: 18px;background: transparent;color: #fff;width: calc(50% - 10px);cursor: pointer;transition: all .5s;font-family: inherit;}
+		.Button:hover{background:#636161;transition: all .5s;}
+/*============================================ footer   =========================================*/
+		.footer1{padding: 5px;color: #fff;background: #000;width: 100%;margin: 0 auto;box-sizing: border-box;height: 345px;display: inline-flex;overflow: hidden;}
+		.SocialMedia {float: right;height: 100%;text-align: center;}
+		.SocialMedia img {width: 105px;height: 105px;}
+/*=================================== error ==================================*/
+		.error {width: 100%;height: 100vh;background-color: #6b6b6b;text-align: center;align-items: center;background: url(https://lh3.googleusercontent.com/-_iDDzs6JhHs/XhKBA1q1RvI/AAAAAAAADFk/l-W1kMCmcpELJ-EyxCkOqjcVDaVEX88TgCNcBGAsYHQ/h120/http-errors.jpg) center no-repeat;background-size: cover;font-size: 45px;color: #ff7373;display: none;}
+
+		h3.ErrorClass {background: #343434;display: inline-block;border-radius: 0 0 5px 5px;}
+
+		img.ErrorClass_mg {width: 50px;height: 50px;}
+
+		a.taken {cursor: pointer;background: #343434;padding: 5px;border-radius: 7px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
