@@ -92,7 +92,7 @@ function getTube(country,info){
 	     			DIV.setAttribute('id',`myElem${i+1}`)
 	     			DIV.innerHTML=`
 	     			   		<div class="num_tend">${i+1} </div>
-							<a href="view Video tube.html" onclick="var LocaleToStr={'url':'${articls[i].id}','Title':'${title2}','tags':'${tags}','date':'${date}','desc':'${desc2}','nameChannel':'${NmCh}','LinkChannel':'${linCod}','trend':'${i+1}'};
+							<a href="https://world-youtubetrending.blogspot.com/p/pageview.html" onclick="var LocaleToStr={'url':'${articls[i].id}','Title':'${title2}','tags':'${tags}','date':'${date}','desc':'${desc2}','nameChannel':'${NmCh}','LinkChannel':'${linCod}','trend':'${i+1}'};
 							sessionStorage.setItem('myData', JSON.stringify(LocaleToStr));"  >
 								<h3 class="title_element" title="${title}">${subTitle}</h3>
 							</a>
@@ -100,7 +100,7 @@ function getTube(country,info){
 								<a href="https://www.youtube.com/channel/${articls[i].snippet.channelId}" target="_blink"><i class="material-icons">account_circle</i><strong class="name_c" title="${Ctle}">${Ctle}</strong>
 								</a>
 							</div>
-							<a href="view Video tube.html" onclick="var LocaleToStr={'url':'${articls[i].id}','Title':'${title2}','tags':'${tags}','date':'${date}','desc':'${desc2}','nameChannel':'${NmCh}','LinkChannel':'${linCod}','trend':'${i+1}'};
+							<a href="https://world-youtubetrending.blogspot.com/p/pageview.html" onclick="var LocaleToStr={'url':'${articls[i].id}','Title':'${title2}','tags':'${tags}','date':'${date}','desc':'${desc2}','nameChannel':'${NmCh}','LinkChannel':'${linCod}','trend':'${i+1}'};
 							sessionStorage.setItem('myData', JSON.stringify(LocaleToStr));" >
 								<div class="img_i">
 									<span class="play"><i class="material-icons">play_circle_outline</i></span>
@@ -112,7 +112,7 @@ function getTube(country,info){
 										<p class="para"> ${desc}</p>
 									</div>
 					      		</div>
-					<a class="link" title="${title}"  href="view Video tube.html"
+					<a class="link" title="${title}"  href="https://world-youtubetrending.blogspot.com/p/pageview.html"
 					onclick="var LocaleToStr={'url':'${articls[i].id}','Title':'${title2}','tags':'${tags}','date':'${date}','desc':'${desc2}','nameChannel':'${NmCh}','LinkChannel':'${linCod}','trend':'${i+1}'};
 							sessionStorage.setItem('myData', JSON.stringify(LocaleToStr));"> Whatch Video </a>
 	     			`;
