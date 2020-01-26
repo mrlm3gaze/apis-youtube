@@ -147,14 +147,14 @@ function getTube(country,info){
 	     				 text=`
 	     				<li class="elments" id="${position}">
 	     			   		<div class="num_tend"> ${i+1} </div>
-							<a href="view Video tube.html" title="${title}">
+							<a href="/p/pageview.html" title="${title}">
 								<h3 class="title_element" id="${position}">${subTitle}</h3>
 							</a>
 							<div class="Name_Chan">
 								<a href="https://www.youtube.com/channel/${articls[i].snippet.channelId}" target="_blink"><i class="material-icons">account_circle</i><strong class="name_c" title="${Ctle}">${Ctle}</strong>
 								</a>
 							</div>
-							<a href="view Video tube.html" id="${position}" title="${title}" target='_blink'>
+							<a href="/p/pageview.html" id="${position}" title="${title}" target='_blink'>
 								<div class="img_i">
 									<span class="play" id="${position}">
 									  <i class="material-icons" id="${position}">play_circle_outline</i>
@@ -167,7 +167,7 @@ function getTube(country,info){
 										<p class="para"> ${desc}</p>
 									</div>
 					      		</div>
-							<a class="link" href="view Video tube.html" id="${position}" title="${title}" target='_blink'> ${lgWv} </a>
+							<a class="link" href="/p/pageview.html" id="${position}" title="${title}" target='_blink'> ${lgWv} </a>
 						</li>
 	     			`;
 	     			ul.insertAdjacentHTML(pos,text);
