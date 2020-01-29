@@ -1,0 +1,88 @@
+{
+  "db" : {
+    "channel" : {
+      "a" : "Al Aoula Inter",
+      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/alaoulax2.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter-avc1_1500000=3-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter-avc1_1000000=3-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter-avc1_400000=3-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Al Aoula Laayoune",
+      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/laayounex2-bg.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_laayoune/hls_snrt/al_aoula_laayoune-avc1_1500000=3-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_laayoune/hls_snrt/al_aoula_laayoune-avc1_1000000=3-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_laayoune/hls_snrt/al_aoula_laayoune-avc1_400000=2-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Tamazight",
+      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/tamazightx2.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt-avc1_1500000=3-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt-avc1_1000000=2-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt-avc1_400000=2-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Arriadia",
+      "b" : "https://4.bp.blogspot.com/-jCKskWH658E/Wxm_a_jaqvI/AAAAAAAAFns/cK3T9hfq-fgnp64yzd_IfShraGkIK25UwCLcBGAs/s1600/474.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/arriadia-avc1_1500000=4-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/arriadia-avc1_1000000=4-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/arriadia-avc1_400000=4-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Arrabiaa",
+      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/athaqafiax2.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arrabiaa/hls_snrt/arrabiaa-avc1_1500000=4-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arrabiaa/hls_snrt/arrabiaa-avc1_1000000=4-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arrabiaa/hls_snrt/arrabiaa-avc1_400000=4-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Al Maghribia",
+      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/almaghribiax2.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_maghribia_snrt/hls_snrt/al_maghribia_snrt-avc1_1500000=4-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_maghribia_snrt/hls_snrt/al_maghribia_snrt-avc1_1000000=4-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_maghribia_snrt/hls_snrt/al_maghribia_snrt-avc1_400000=4-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Assadissa",
+      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/assadissax2.png",
+      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/assadissa/hls_snrt/assadissa-avc1_1500000=4-mp4a_130400_qad=1.m3u8",
+      "d" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/assadissa/hls_snrt/assadissa-avc1_1000000=4-mp4a_130400_qad=1.m3u8",
+      "e" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/assadissa/hls_snrt/assadissa-avc1_400000=4-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Medi 1 TV Maghreb",
+      "b" : "https://cdn.sat.tv/wp-content/uploads/2016/05/Medi-1-TV.png",
+      "c" : "http://streaming.medi1tv.com/live/Medi1tvmaghreb.sdp/playlist.m3u8",
+      "d" : "http://streaming.medi1tv.com/live/Medi1tvmaghreb.sdp/playlist.m3u8",
+      "e" : "http://streaming.medi1tv.com/live/Medi1tvmaghreb.sdp/playlist.m3u8"
+    },
+    "channel" : {
+      "a" : "Medi 1 TV Afrique ",
+      "b" : "https://cdn.sat.tv/wp-content/uploads/2016/05/Medi-1-TV.png",
+      "c" : "http://streaming.medi1tv.com/live/Medi1tvAfrique.sdp/playlist.m3u8",
+      "d" : "http://streaming.medi1tv.com/live/Medi1tvAfrique.sdp/playlist.m3u8",
+      "e" : "http://streaming.medi1tv.com/live/Medi1tvAfrique.sdp/playlist.m3u8"
+    },
+    "channel" : {
+      "a" : "Chada TV",
+      "b" : "https://upload.wikimedia.org/wikipedia/ar/5/5b/Chadatv.png",
+      "c" : "http://chadatv.vedge.infomaniak.com/livecast/chadatv/chunklist.m3u8",
+      "d" : "http://chadatv.vedge.infomaniak.com/livecast/chadatv/chunklist.m3u8",
+      "e" : "https://chadatv.vedge.infomaniak.com/livecast/chadatv/chunklist.m3u8"
+    },
+    "channel" : {
+      "a" : "2M MAROC",
+      "b" : "https://upload.wikimedia.org/wikipedia/fr/thumb/a/ac/2M_Logo.svg/1200px-2M_Logo.svg.png",
+      "c" : "https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-avc1_1500000=4-mp4a_130400_qad=1.m3u8",
+      "d" : "https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-avc1_1500000=4-mp4a_130400_qad=1.m3u8",
+      "e" : "https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-avc1_1500000=4-mp4a_130400_qad=1.m3u8"
+    },
+    "channel" : {
+      "a" : "Tele Maroc ",
+      "b" : "https://image.moboplay.com/images/apk/990/com.wTeleMaroc_5133069_icon.png",
+      "c" : "https://playback.akamaized.net/streams/27130247_8196478_lsi9b8e9owf1y7zysaf_1/media/27130247_8196478_lsi9b8e9owf1y7zysaf_1@1756000p.m3u8?dw=14400&ts=1577466000&hdnts=exp=1577639756~acl=/streams/27130247_8196478_lsi9b8e9owf1y7zysaf_1/media*~hmac=3cc363d64aee66f86e25158bb3f6c2e0ab3b116fa442b586df0ce85cf385386e",
+      "d" : "https://playback.akamaized.net/streams/27130247_8196478_lsi9b8e9owf1y7zysaf_1/media/27130247_8196478_lsi9b8e9owf1y7zysaf_1@1756000p.m3u8?dw=14400&ts=1577466000&hdnts=exp=1577639756~acl=/streams/27130247_8196478_lsi9b8e9owf1y7zysaf_1/media*~hmac=3cc363d64aee66f86e25158bb3f6c2e0ab3b116fa442b586df0ce85cf385386e",
+      "e" : "https://playback.akamaized.net/streams/27130247_8196478_lsi9b8e9owf1y7zysaf_1/media/27130247_8196478_lsi9b8e9owf1y7zysaf_1@628000pb.m3u8?dw=14400&ts=1577466000&hdnts=exp=1577639756~acl=/streams/27130247_8196478_lsi9b8e9owf1y7zysaf_1/media*~hmac=3cc363d64aee66f86e25158bb3f6c2e0ab3b116fa442b586df0ce85cf385386e"
+    }
+  }
+  }
