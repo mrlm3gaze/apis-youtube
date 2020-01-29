@@ -16,16 +16,16 @@
     },
     {
     "channel" : {
-      "a" : "Tamazight",
-      "b" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/tamazightx2.png",
-      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt-avc1_1500000=3-mp4a_130400_qad=1.m3u8"
+      "name" : "Tamazight",
+      "url" : "http://www.snrtlive.ma/sites/all/themes/snrtlive/images/tamazightx2.png",
+      "link" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt-avc1_1500000=3-mp4a_130400_qad=1.m3u8"
         }
     },
     {
     "channel" : {
       "name" : "Arriadia",
       "url" : "https://4.bp.blogspot.com/-jCKskWH658E/Wxm_a_jaqvI/AAAAAAAAFns/cK3T9hfq-flinknp64yzd_IfShraGkIK25UwCLcBGAs/s1600/474.png",
-      "c" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/arriadia-avc1_1500000=4-mp4a_130400_qad=1.m3u8"
+      "link" : "http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/arriadia-avc1_1500000=4-mp4a_130400_qad=1.m3u8"
         }
     },
     {
