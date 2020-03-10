@@ -149,7 +149,7 @@ function getURL(_order){
 		 	    			    prof1= articls[i].snippet.topLevelComment.snippet.authorProfileImageUrl,
 								prof = '',
 		 	    			    auth = articls[i].snippet.topLevelComment.snippet.authorChannelUrl,
-		 	    			    comm = decodeURIComponent(articls[i].snippet.topLevelComment.snippet.textDisplay),
+		 	    			    comm = articls[i].snippet.topLevelComment.snippet.textDisplay,
 		 	    			    like = articls[i].snippet.topLevelComment.snippet.likeCount,
 		 	    			    date = (articls[i].snippet.topLevelComment.snippet.publishedAt).slice(0,10),
 		 	    			    time = (articls[i].snippet.topLevelComment.snippet.publishedAt).slice(11,16),
@@ -463,6 +463,7 @@ if (BackGround ==='' || BackGround==='0' || BackGround ===undefined || BackGroun
 					<p class="trendNumber"> # ${trendNumber + lgtrend}</p>
 					<h3 class="title" title="${TitleV}"> ${TitleV} </h3>
 				`;
+				console.log('err');
 				TitleStatics.insertAdjacentHTML(positionText,context);
 			}
 		}
@@ -473,7 +474,7 @@ getStaticVideo();
 //format Numbers
 function numberFomat(number){
 	if (number>=1000000000) {
-		return (number/1000000000).toFixed(1).replace(/\.0$/,'') +'G';
+		return (number/1000000000).toFixed(1).replace(/\.0$/,'') +'MD';
 	} else if(number>=1000000){
 		return (number/1000000).toFixed(1).replace(/\.0$/,'') +'M';
 	}if(number>=1000){
