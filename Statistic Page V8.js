@@ -228,7 +228,9 @@ function GetStorage(){
 						   <span class="dateV">${dateV}</span>
 						</div>	
 						<div class="TagsTxt">${array}</div>
-						<div class="descText">${desc}</div>
+						<div class="DiscTxt">
+							<div class="descText">${desc}</div>
+						</div>
 					</div>
 				`;
 	  	}
@@ -338,8 +340,8 @@ if (BackGround ==='' || BackGround==='0' || BackGround ===undefined || BackGroun
 			}
 	}
 // get photo profile tochannel
- function GetThumbnailChnnel() {
- 		var urlReq='https://www.googleapis.com/youtube/v3/channels?part=snippet&id='+ chaLinInfo +'&key='+ apikey,
+function GetThumbnailChnnel() {
+ 		var urlReq='https://www.googleapis.com/youtube/v3/channels?part=snippet&id='+ chaLinInfo +'&key=' + apikey,
  		req=new Request(urlReq),
  		results,
  		myItems;
@@ -387,7 +389,7 @@ if (BackGround ==='' || BackGround==='0' || BackGround ===undefined || BackGroun
 	     				<span class='joined'>${publishChan}</span>
 	     			</span>
 	     		`;
-	     		infoV.appendChild(divInfo);
+	     		moreInfo.appendChild(divInfo);
  			})
 
  		})
