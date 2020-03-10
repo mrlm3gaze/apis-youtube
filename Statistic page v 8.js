@@ -8,6 +8,8 @@ try {
 		dialog =document.querySelector('.Dialog'),
 		// info video title tags desc
 		infoV=document.querySelector('.infoVedo'),
+		TitleStatics=document.getElementById('title_statitic'),
+		moreInfo=document.getElementById('more_info'),
 		//slect comment order
  		OrderComment=document.querySelector('#OrderComment'),
  		_order="time",
