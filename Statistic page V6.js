@@ -228,10 +228,6 @@ function GetStorage(){
 						   <span class="dateV">${dateV}</span>
 						</div>	
 						<div class="TagsTxt">${array}</div>
-						<div class="DiscTxt">
-							<div class="descText">${descText}</div>
-							<button class='show_hide' job='show' onclick='showMore(desc)'>Show More</button>
-						</div>
 					</div>
 				`;
 	  	}
