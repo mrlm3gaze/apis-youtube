@@ -228,6 +228,7 @@ function GetStorage(){
 						   <span class="dateV">${dateV}</span>
 						</div>	
 						<div class="TagsTxt">${array}</div>
+						<div class="descText">${desc}</div>
 					</div>
 				`;
 	  	}
