@@ -211,9 +211,7 @@ function GetStorage(){
 				} else {
 					array +='<span class="Arry">' + ' @ ' + myArray[i] +'</span>';
 				}
-			infoV.innerHTML=`
-			<p class="trendNumber"> # ${trendNumber + lgtrend}</p>
-					<h3 class="title" title="${TitleV}"> ${TitleV} </h3>
+			moreInfo.innerHTML=`
 					<div class="NameChannel">
 						<a href="${LinkChannel}" class="linkchannel" target='blink' title="${nameChannel}">
 							<i class="material-icons">account_circle</i> 
@@ -230,7 +228,10 @@ function GetStorage(){
 						   <span class="dateV">${dateV}</span>
 						</div>	
 						<div class="TagsTxt">${array}</div>
-						<div class="DiscTxt">${desc}</div>
+						<div class="DiscTxt">
+							<div class="descText">${descText}</div>
+							<button class='show_hide' job='show' onclick='showMore(desc)'>Show More</button>
+						</div>
 					</div>
 				`;
 	  	}
