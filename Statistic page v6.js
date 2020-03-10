@@ -130,7 +130,7 @@ function changeOrder(_order){
 function getURL(_order){
  		// variables
 
-	 	var url=`https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&maxResults=100&moderationStatus=published&order=${_order}&textFormat=html&videoId=${urlV}&key=AIzaSyBeP7xWS7fAr0-PpgaTPfuk4VXtBNKMm2g`,
+	 	var url=`https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&maxResults=100&moderationStatus=published&order=${_order}&textFormat=html&videoId=${urlV}&key=${apikey}`,
 	 	    req = new Request(url),
 	 	    results,
 	 	    articls;
@@ -339,7 +339,7 @@ if (BackGround ==='' || BackGround==='0' || BackGround ===undefined || BackGroun
 	}
 // get photo profile tochannel
  function GetThumbnailChnnel() {
- 		var urlReq='https://www.googleapis.com/youtube/v3/channels?part=snippet&id='+ chaLinInfo +'&key=AIzaSyBeP7xWS7fAr0-PpgaTPfuk4VXtBNKMm2g',
+ 		var urlReq='https://www.googleapis.com/youtube/v3/channels?part=snippet&id='+ chaLinInfo +'&key='+ apikey,
  		req=new Request(urlReq),
  		results,
  		myItems;
@@ -393,6 +393,92 @@ if (BackGround ==='' || BackGround==='0' || BackGround ===undefined || BackGroun
  		})
  }
  GetThumbnailChnnel();
+}
+	function getStaticVideo(){
+ let staticUrl=`https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${urlV}&key=${apikey}`,
+			//create new object 
+			xhr=new XMLHttpRequest(),
+			responseData,items,positionText='beforeend',context,likes,dislikes,commentsCunter,views,
+			newLikes,newDislikes,newComments,newViews;
+		// request Data 
+		xhr.onload=function(){
+			if (this.status==200 &&this.readyState==4) {
+				responseData=JSON.parse(this.response);
+				items=responseData.items[0].statistics;
+				//vaiables 
+				likes=items.likeCount;
+				dislikes=items.dislikeCount;
+				commentsCunter=items.commentCount;
+				views=items.viewCount;
+				
+				//fomat numbers
+				newLikes=numberFomat(likes);
+				newDislikes=numberFomat(dislikes);
+				newViews=numberFomat(views);
+
+				if (commentsCunter==undefined||commentsCunter==null ||commentsCunter=='0') {
+					newComments='0';
+				} else {
+					newComments=numberFomat(commentsCunter);
+				}				
+				//progress likes
+				var sum= parseInt(parseInt(likes)+parseInt(dislikes)); 
+				var progressDisLikes=dislikes/sum * 100 +'%';
+				var progressLikes=likes/sum * 100 +'%';
+				context=`
+					<p class="trendNumber"> # ${trendNumber + lgtrend}</p>
+					<h3 class="title" title="${TitleV}"> ${TitleV} </h3>
+					<div class='staticsVideo'>
+						<span class='commentCount'>
+							<i class="material-icons">comment</i>
+							${newComments}
+						</span>
+						<div class="prog_likesdis-container">
+							<div class='like_dislikes'>
+								<span class='dislikeCount' title='${dislikes}'>
+									<i class="material-icons">thumb_down_alt</i>
+									${newDislikes}
+								</span>
+								<span class='likeCount' title='${likes}'>
+									<i class="material-icons">thumb_up_alt</i>
+									${newLikes}
+								</span>
+								</div>
+							<div class='progLikes'>
+								<div class='progresDislikes' style='width:${progressDisLikes}'></div>
+								<div class='progresLikes' style='width:${progressLikes};left:${progressDisLikes}'></div>
+							</div>
+						</div>
+						<span class='viewCount' title='${views}'>
+							<i class="material-icons">visibility</i>
+							${newViews}
+						</span>
+					</div>
+				`;
+				TitleStatics.insertAdjacentHTML(positionText,context);
+			} else {
+				context=`
+					<p class="trendNumber"> # ${trendNumber + lgtrend}</p>
+					<h3 class="title" title="${TitleV}"> ${TitleV} </h3>
+				`;
+				TitleStatics.insertAdjacentHTML(positionText,context);
+			}
+		}
+		xhr.open('GET',staticUrl);
+		xhr.send();		
+	}
+getStaticVideo();
+//format Numbers
+function numberFomat(number){
+	if (number>=1000000000) {
+		return (number/1000000000).toFixed(1).replace(/\.0$/,'') +'G';
+	} else if(number>=1000000){
+		return (number/1000000).toFixed(1).replace(/\.0$/,'') +'M';
+	}if(number>=1000){
+		return (number/1000).toFixed(1).replace(/\.0$/,'') + 'K';
+	}else{
+		return number;
+	}
 }
 } catch(err) {
 		console.log(err)
