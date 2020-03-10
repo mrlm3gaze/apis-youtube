@@ -10,6 +10,7 @@
 		lang=document.getElementById('lang'),
 		opt=lang.getElementsByTagName('option'),
 		search=document.querySelector(".search"),
+	    	Name_Country=document.querySelector(".name_cuntry_ip"),
 		country ='',
 		info='',
 		listItem=[],
@@ -128,7 +129,7 @@ function getTube(country,info){
 	}
 	//get Data From Url
 
-	var url=`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostpopular&regionCode=${country}&maxResults=50&key=AIzaSyBeP7xWS7fAr0-PpgaTPfuk4VXtBNKMm2g`,
+	var url=`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostpopular&regionCode=${country}&maxResults=50&key=${apikey}`,
 	    req = new Request(url),
 	    results,
 	    articls,
@@ -337,3 +338,14 @@ function ChangeLang(){
 		localStorage.setItem('!Lan?gua_ge',"?:a");
 	}	
 }
+let xhr=new XMLHttpRequest();
+xhr.onload = function(){
+	 if (this.status==200) {
+		var Response=JSON.parse(this.response);
+		Name_Country.textContent=Response.country;
+	 } else {
+	 	console.warn('error for getting Data');
+	 }
+}
+xhr.open('GET','https://cors-anywhere.herokuapp.com/http://ip-api.com/json');
+xhr.send();
